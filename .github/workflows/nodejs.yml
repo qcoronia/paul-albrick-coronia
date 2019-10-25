@@ -1,0 +1,30 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        npm ci
+        npm prune
+        npm install
+        npm install -g firebase-tools
+        npm run ng -- build --prod --aot
+        firebase use --token 1//0eQ3npgHsNtqACgYIARAAGA4SNwF-L9Ireh0pRHijMvq2mnxQn6FtG95I_Kr8k2Ll1NUlgrdgCTcLWUxnASDxV6qXqxxbTMwIKw4 some-digital-stuff
+        firebase deploy --token 1//0eQ3npgHsNtqACgYIARAAGA4SNwF-L9Ireh0pRHijMvq2mnxQn6FtG95I_Kr8k2Ll1NUlgrdgCTcLWUxnASDxV6qXqxxbTMwIKw4
+      env:
+        CI: true
