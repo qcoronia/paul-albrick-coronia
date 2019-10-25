@@ -1,21 +1,38 @@
 image: node:latest
 
 before_script:
-  - npm prune
-  - npm install
-  - npm install -g firebase-tools
 
 stages:
+  - build
   - deploy
+
+install_npm_packages:
+  stage: .pre
+  only:
+    - master
+  script:
+    - npm prune
+    - npm install
+
+build_angular:
+  stage: build
+  only:
+    - master
+  script:
+    - npm run ng -- build --prod --aot
+  artifacts:
+    paths:
+      - dist/
 
 cache:
   paths:
-    — node_modules/
-  key: “$CI_BUILD_REPO”
+    - node_modules/
 
 deploy_to_firebase:
   stage: deploy
   only:
     - master
   script:
-    - firebase deploy --token $FIREBASE_DEPLOY_KEY
+    - npm install -g firebase-tools
+    - firebase use --token $FIREBASE_TOKEN some-digital-stuff
+    - firebase deploy --token $FIREBASE_TOKEN
