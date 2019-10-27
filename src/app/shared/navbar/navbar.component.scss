@@ -1,7 +1,22 @@
 .navbar {
     height: 100px;
     width: 100vw;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .9), transparent);
+    // background: linear-gradient(to bottom, rgba(255, 255, 255, .9), transparent);
+    background: linear-gradient(
+        rgb(0, 54, 156) 0%,
+        rgb(0, 54, 156, 0.738) 19%,
+        rgb(0, 54, 156, 0.541) 34%,
+        rgb(0, 54, 156, 0.382) 47%,
+        rgb(0, 54, 156, 0.278) 56.5%,
+        rgb(0, 54, 156, 0.194) 65%,
+        rgb(0, 54, 156, 0.126) 73%,
+        rgb(0, 54, 156, 0.075) 80.2%,
+        rgb(0, 54, 156, 0.042) 86.1%,
+        rgb(0, 54, 156, 0.021) 91%,
+        rgb(0, 54, 156, 0.008) 95.2%,
+        rgb(0, 54, 156, 0.002) 98.2%,
+        rgb(0, 54, 156, 0) 100%
+    );
     position: absolute;
     margin-bottom: 0px;
     transition-property: height;
