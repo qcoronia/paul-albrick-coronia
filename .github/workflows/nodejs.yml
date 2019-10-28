@@ -22,8 +22,9 @@ jobs:
         npm prune
         npm install
         npm install -g firebase-tools
-        npm run ng -- build --prod --aot
-        firebase use --token 1//0eQ3npgHsNtqACgYIARAAGA4SNwF-L9Ireh0pRHijMvq2mnxQn6FtG95I_Kr8k2Ll1NUlgrdgCTcLWUxnASDxV6qXqxxbTMwIKw4 some-digital-stuff
-        firebase deploy --token 1//0eQ3npgHsNtqACgYIARAAGA4SNwF-L9Ireh0pRHijMvq2mnxQn6FtG95I_Kr8k2Ll1NUlgrdgCTcLWUxnASDxV6qXqxxbTMwIKw4
+        ng build --prod --aot
+        firebase use --token $FIREBASE_TOKEN some-digital-stuff
+        firebase deploy --token $FIREBASE_TOKEN
       env:
         CI: true
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
