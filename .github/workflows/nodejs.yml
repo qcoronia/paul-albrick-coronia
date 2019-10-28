@@ -16,15 +16,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: install dependencies
+    - name: Install Dependencies
       run: |
         npm ci
         npm install -g @angular/cli
         npm install -g firebase-tools
-    - name: build angular
+    - name: Build Angular
       run: |
         ng build --prod --aot
-    - name: deploy to firebase
+    - name: Deploy to Firebase
       run: |
         firebase use --token $FIREBASE_TOKEN some-digital-stuff
         firebase deploy --token $FIREBASE_TOKEN
