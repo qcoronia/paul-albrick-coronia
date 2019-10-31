@@ -1,9 +1,15 @@
+@import '../../../assets/scss/variables';
+
+$banner-background-color-primary: blue;
+$banner-background-color-accent: cyan;
+
 .banner {
-    height: 100vh;
-    background: linear-gradient(150deg, blue, cyan);
+    height: 110vh;
+    background: linear-gradient(150deg, $banner-background-color-primary, $banner-background-color-accent);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: $section-spacer * 6;
 
     .headline {
         background-color: transparent;
@@ -13,6 +19,17 @@
         .caption {
             color: lighten(white, .8);
             margin-left: 100px;
+        }
+    }
+
+    .banner-footer {
+        position: absolute;
+        bottom: 0px;
+
+        .btn-outline-light {
+            &:hover {
+                color: $banner-background-color-primary;
+            }
         }
     }
 }

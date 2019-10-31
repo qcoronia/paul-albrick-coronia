@@ -1,0 +1,39 @@
+.section {
+    margin-top: -$section-spacer * 2;
+    margin-bottom: $section-spacer * 2;
+
+    @mixin skewed-border($position, $skew-amount) {
+        content: ' ';
+        transform: skewY($skew-amount);
+        height: $section-spacer * 6;
+        display: block;
+        width: 100%;
+        position: relative;
+
+        --box-shadow-offset-y: -5px;
+        @if $position == 'top' {
+            margin-top: $section-spacer * 3;
+            top: -$section-spacer * 4;
+
+            --box-shadow-offset-y: -5px;
+        }
+
+        @if $position == 'bottom' {
+            margin-bottom: $section-spacer * 3;
+            bottom: -$section-spacer * 6;
+
+            --box-shadow-offset-y: 5px;
+        }
+
+        --box-shadow-color: white;
+        box-shadow: 0px var(--box-shadow-offset-y) 9px 5px var(--box-shadow-color);
+    }
+
+    &.skewed-top:before {
+        @include skewed-border('top', -2deg);
+    }
+
+    &.skewed-bottom:after {
+        @include skewed-border('bottom', 2deg);
+    }
+}

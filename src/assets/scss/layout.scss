@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .content-wrapper {
+        margin-top: $content-spacer;
+        margin-bottom: $content-spacer;
+
+        .typo-content {
+            padding-left: $content-padding;
+        }
+    }
+}

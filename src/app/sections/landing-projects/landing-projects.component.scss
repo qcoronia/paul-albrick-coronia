@@ -1,0 +1,13 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/sections.scss';
+
+$landing-projects-background-color: white;
+
+.landing-projects {
+    background-color: $landing-projects-background-color;
+
+    &::before,
+    &::after {
+        background-color: $landing-projects-background-color;
+    }
+}
