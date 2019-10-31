@@ -1,11 +1,11 @@
 @import '../../../assets/scss/variables';
 
-$banner-background-color-primary: blue;
-$banner-background-color-accent: cyan;
-
 .banner {
+    $background-color-primary: blue;
+    $background-color-accent: cyan;
+
     height: 110vh;
-    background: linear-gradient(150deg, $banner-background-color-primary, $banner-background-color-accent);
+    background: linear-gradient(150deg, $background-color-primary, $background-color-accent);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -28,7 +28,7 @@ $banner-background-color-accent: cyan;
 
         .btn-outline-light {
             &:hover {
-                color: $banner-background-color-primary;
+                color: $background-color-primary;
             }
         }
     }

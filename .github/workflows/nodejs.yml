@@ -24,10 +24,10 @@ jobs:
     - name: Build Angular
       run: |
         ng build --prod --aot
-    - name: Deploy to Firebase
-      run: |
-        firebase use --token $FIREBASE_TOKEN some-digital-stuff
-        firebase deploy --token $FIREBASE_TOKEN
+    # - name: Deploy to Firebase
+    #   run: |
+    #     firebase use --token $FIREBASE_TOKEN some-digital-stuff
+    #     firebase deploy --token $FIREBASE_TOKEN
       env:
         CI: true
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

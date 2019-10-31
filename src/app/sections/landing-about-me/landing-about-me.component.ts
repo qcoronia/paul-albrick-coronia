@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-landing-projects',
-  templateUrl: './landing-projects.component.html',
-  styleUrls: ['./landing-projects.component.scss']
+  selector: 'app-landing-about-me',
+  templateUrl: './landing-about-me.component.html',
+  styleUrls: ['./landing-about-me.component.scss']
 })
-export class LandingProjectsComponent implements OnInit {
+export class LandingAboutMeComponent implements OnInit {
 
   @Input() public heading: string;
   @Input() public subHeading: string;

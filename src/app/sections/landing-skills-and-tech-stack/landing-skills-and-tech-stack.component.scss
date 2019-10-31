@@ -1,13 +1,13 @@
 @import '../../../assets/scss/variables';
 @import '../../../assets/scss/sections.scss';
 
-.landing-projects {
+
+.landing-skills-and-tech-stack {
     $background-color: white;
     background-color: $background-color;
 
     &::before,
     &::after {
-        --skew-direction: -1;
         background-color: $background-color;
     }
 }

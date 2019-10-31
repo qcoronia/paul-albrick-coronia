@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  public headerText: string;
-  public captionText: string;
+  @Input() public heading: string;
+  @Input() public subHeading: string;
 
-  constructor() {
-    this.headerText = 'Some Digital Stuffs';
-    this.captionText = 'explore the contents that I made myself';
-  }
+  constructor() { }
 
   ngOnInit() {
   }

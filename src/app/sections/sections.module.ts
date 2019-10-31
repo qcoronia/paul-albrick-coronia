@@ -3,11 +3,17 @@ import { CommonModule } from '@angular/common';
 import { BannerComponent } from './banner/banner.component';
 import { LandingProjectsComponent } from './landing-projects/landing-projects.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { LandingSkillsAndTechStackComponent } from './landing-skills-and-tech-stack/landing-skills-and-tech-stack.component';
+import { LandingAboutMeComponent } from './landing-about-me/landing-about-me.component';
+import { LandingGraphicsAndIllustrationsComponent } from './landing-graphics-and-illustrations/landing-graphics-and-illustrations.component';
 
 @NgModule({
   declarations: [
     BannerComponent,
-    LandingProjectsComponent
+    LandingProjectsComponent,
+    LandingSkillsAndTechStackComponent,
+    LandingAboutMeComponent,
+    LandingGraphicsAndIllustrationsComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +21,10 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
   ],
   exports: [
     BannerComponent,
-    LandingProjectsComponent
+    LandingProjectsComponent,
+    LandingSkillsAndTechStackComponent,
+    LandingAboutMeComponent,
+    LandingGraphicsAndIllustrationsComponent
   ]
 })
 export class SectionsModule { }

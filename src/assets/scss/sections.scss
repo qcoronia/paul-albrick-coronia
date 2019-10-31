@@ -2,9 +2,9 @@
     margin-top: -$section-spacer * 2;
     margin-bottom: $section-spacer * 2;
 
-    @mixin skewed-border($position, $skew-amount) {
+    @mixin skewed-border($position, $skew-angle) {
         content: ' ';
-        transform: skewY($skew-amount);
+        transform: skewY($skew-angle);
         height: $section-spacer * 6;
         display: block;
         width: 100%;
@@ -35,5 +35,15 @@
 
     &.skewed-bottom:after {
         @include skewed-border('bottom', 2deg);
+    }
+
+    &:not(.skewed-top) {
+        margin-top: 0;
+        padding-top: $section-spacer * 13;
+    }
+
+    &:not(.skewed-bottom) {
+        margin-bottom: 0;
+        padding-bottom: $section-spacer * 13;
     }
 }

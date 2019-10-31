@@ -1,0 +1,8 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/sections.scss';
+
+.landing-graphics-and-illustrations {
+    $background-color-primary: cyan;
+    $background-color-accent: green;
+    background: linear-gradient(240deg, $background-color-primary, $background-color-accent);
+}
