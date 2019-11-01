@@ -26,7 +26,7 @@ jobs:
         ng build --prod --aot
     # - name: Deploy to Firebase
     #   run: |
-    #     firebase use --token $FIREBASE_TOKEN some-digital-stuff
+    #     firebase use --token $FIREBASE_TOKEN paul-albrick-coronia
     #     firebase deploy --token $FIREBASE_TOKEN
       env:
         CI: true

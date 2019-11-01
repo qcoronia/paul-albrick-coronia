@@ -1,3 +1,3 @@
-# some-digital-stuffs
+# paul-albrick-coronia
 blog site angular application
-Visit at https://some-digital-stuffs.firebaseapp.com/
+Visit at https://paul-albrick-coronia.firebaseapp.com/

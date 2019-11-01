@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "public": "dist/some-digital-stuffs",
-    "site": "some-digital-stuffs",
+    "public": "dist/paul-albrick-coronia",
     "ignore": [
       "firebase.json",
       "**/.*",
