@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     .content-wrapper {
         margin-top: $content-spacer;
@@ -9,6 +11,11 @@
 
         .typo-content {
             padding-left: $content-padding;
+            padding-right: $content-padding;
+
+            > h2 {
+                font-size: x-large;
+            }
         }
     }
 }

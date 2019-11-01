@@ -16,9 +16,13 @@
         color: white;
         text-shadow: 0px 4px 15px darken(adjust-hue($background-color-primary, -90deg), 25%);
 
+        .heading {
+            font-size: xx-large;
+        }
+
         .caption {
             color: lighten(white, .8);
-            margin-left: 100px;
+            font-size: 60%;
         }
     }
 
