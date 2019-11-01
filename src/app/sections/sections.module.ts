@@ -6,6 +6,7 @@ import { LandingSkillsAndTechStackComponent } from './landing-skills-and-tech-st
 import { LandingAboutMeComponent } from './landing-about-me/landing-about-me.component';
 import { LandingGraphicsAndIllustrationsComponent } from './landing-graphics-and-illustrations/landing-graphics-and-illustrations.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     AngularFontAwesomeModule,
   ],
   exports: [
