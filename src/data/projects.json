@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Down-the Pit for Cheese!",
+        "iconPath": "/assets/img/projects/icons/down-the-pit-for-cheese-icon.png",
+        "featureBannerPath": "/assets/img/projects/feature-banners/down-the-pit-for-cheese-feature-banner.png"
+    },
+    {
+        "title": "Gravity Grind",
+        "iconPath": "/assets/img/projects/icons/gravity-grind-icon.png",
+        "featureBannerPath": "/assets/img/projects/feature-banners/gravity-grind-feature-banner.png"
+    },
+    {
+        "title": "Hop to Heaven",
+        "iconPath": "/assets/img/projects/icons/hop-to-heaven-icon.png",
+        "featureBannerPath": "/assets/img/projects/feature-banners/hop-to-heaven-feature-banner.png"
+    },
+    {
+        "title": "A Cat in Space",
+        "iconPath": "/assets/img/projects/icons/a-cat-in-space-icon.png",
+        "featureBannerPath": "/assets/img/projects/feature-banners/a-cat-in-space-feature-banner.png"
+    }
+]
