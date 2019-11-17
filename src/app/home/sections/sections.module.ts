@@ -10,6 +10,7 @@ import { CallToActionSectionComponent } from './call-to-action-section/call-to-a
 import { BulletListSectionComponent } from './bullet-list-section/bullet-list-section.component';
 import { ContactFormSectionComponent } from './contact-form-section/contact-form-section.component';
 import { DescriptiveCallToActionSectionComponent } from './descriptive-call-to-action-section/descriptive-call-to-action-section.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -27,7 +28,8 @@ import { DescriptiveCallToActionSectionComponent } from './descriptive-call-to-a
     DescriptiveCallToActionSectionComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   exports: [
     BannerComponent,
