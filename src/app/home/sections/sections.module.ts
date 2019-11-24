@@ -11,6 +11,7 @@ import { BulletListSectionComponent } from './bullet-list-section/bullet-list-se
 import { ContactFormSectionComponent } from './contact-form-section/contact-form-section.component';
 import { DescriptiveCallToActionSectionComponent } from './descriptive-call-to-action-section/descriptive-call-to-action-section.component';
 import { RouterModule } from '@angular/router';
+import { ShortBannerComponent } from './short-banner/short-banner.component';
 
 
 
@@ -26,6 +27,7 @@ import { RouterModule } from '@angular/router';
     BulletListSectionComponent,
     ContactFormSectionComponent,
     DescriptiveCallToActionSectionComponent,
+    ShortBannerComponent,
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { RouterModule } from '@angular/router';
     BulletListSectionComponent,
     ContactFormSectionComponent,
     DescriptiveCallToActionSectionComponent,
+    ShortBannerComponent,
   ]
 })
 export class SectionsModule { }

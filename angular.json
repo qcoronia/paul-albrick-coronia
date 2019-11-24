@@ -38,6 +38,7 @@
               "./node_modules/argon-design-system-free/assets/vendor/jquery/jquery.min.js",
               "./node_modules/argon-design-system-free/assets/vendor/popper/popper.min.js",
               "./node_modules/argon-design-system-free/assets/vendor/headroom/headroom.min.js",
+              "./node_modules/argon-design-system-free/assets/vendor/bootstrap/bootstrap.min.js",
               "./node_modules/argon-design-system-free/assets/js/argon.js"
             ]
           },

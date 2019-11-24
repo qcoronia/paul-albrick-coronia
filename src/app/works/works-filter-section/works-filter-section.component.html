@@ -1,0 +1,19 @@
+<section class="section section-lg mt--200">
+    <div class="container">
+        <div class="row row-grid justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow border-0">
+                    <div class="card-body py-5 text-center">
+                        <ng-template ngFor let-tag [ngForOf]="tags">
+                            <button class="btn btn-outline-secondary"
+                                (click)="select(tag)">
+                                <span *ngIf="!isSelected(tag)">{{tag}}</span>
+                                <span *ngIf="isSelected(tag)" class="highlighted-filter">{{tag}}</span>
+                            </button>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
