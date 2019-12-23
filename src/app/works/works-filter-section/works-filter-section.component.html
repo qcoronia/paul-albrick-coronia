@@ -6,9 +6,9 @@
                     <div class="card-body py-5 text-center">
                         <ng-template ngFor let-tag [ngForOf]="tags">
                             <button class="btn btn-outline-secondary"
+                                [class.btn-slack]="isSelected(tag)"
                                 (click)="select(tag)">
-                                <span *ngIf="!isSelected(tag)">{{tag}}</span>
-                                <span *ngIf="isSelected(tag)" class="highlighted-filter">{{tag}}</span>
+                                <span>{{tag}}</span>
                             </button>
                         </ng-template>
                     </div>

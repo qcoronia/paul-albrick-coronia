@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
@@ -14,9 +14,12 @@ export class WorksFilterSectionComponent implements OnInit {
   public tags: string[];
   public selectedTags: string[];
 
+  @Output() public selectionChanged: EventEmitter<string[]>;
+
   constructor(private http: HttpClient) {
     this.tags = [] as string[];
     this.selectedTags = [] as string[];
+    this.selectionChanged = new EventEmitter<string[]>();
 
     this.http.get<Project[]>('/data/projects.json').pipe(
       map(res => res || [] as Project[]),
@@ -50,5 +53,7 @@ export class WorksFilterSectionComponent implements OnInit {
     } else {
       this.selectedTags = this.selectedTags.filter(e => e !== tag);
     }
+
+    this.selectionChanged.next(this.selectedTags);
   }
 }
