@@ -1,26 +1,37 @@
 [
     {
-        "title": "Down-the Pit for Cheese!",
+        "title": "Don't Get Crushed!",
+        "iconPath": "/assets/img/projects/icons/dont-get-crushed-icon.png",
+        "featureBannerPath": "/assets/img/projects/feature-banners/dont-get-crushed-feature-banner.png",
+        "desc": "Try to avoid the pillars above that eagerly wants to CRUSH you!\n\nYou are a fragile glass orb. And those pillars would try to CRUSH you.\n\nEvade and keep yourself intact as much as possible.\n\nBut beware, the pillars get more aggressive the more they failed to crush you.\n\n-Simple controls\n-Immersive atmosphere\n-Challenging gameplay",
+        "tags": [ "Games", "Mobile", "2D" ]
+    },
+    {
+        "title": "Down the Pit for Cheese!",
         "iconPath": "/assets/img/projects/icons/down-the-pit-for-cheese-icon.png",
         "featureBannerPath": "/assets/img/projects/feature-banners/down-the-pit-for-cheese-feature-banner.png",
+        "desc": "Help Jiffy gather lots of cheese in the cheese-filled pit.\n\nJiffy loves cheese very much. And in this pit, there's a lot of them!\n\nHowever, it seems that a cat is after you.\n\nHelp Jiffy gather a lot of cheese before the cat reaches him.\n\n-Simple Controls\n-Friendly Atmosphere\n-Fun Gameplay",
         "tags": [ "Games", "Mobile", "2D" ]
     },
     {
         "title": "Gravity Grind",
         "iconPath": "/assets/img/projects/icons/gravity-grind-icon.png",
         "featureBannerPath": "/assets/img/projects/feature-banners/gravity-grind-feature-banner.png",
+        "desc": "Go further by Grinding and make your way by Flipping Gravity\n\nMake your way through various obstacles by grinding, flipping gravity, and evading obstacles.\nAs you go further, the obstacles will become more challenging.\nGo as far as you can.\n\nFeatures:\n-Simplistic graphics\n-Immersive effects\n-Smooth gameplay\n-Challenging game",
         "tags": [ "Games", "Mobile", "3D" ]
     },
     {
         "title": "Hop to Heaven",
         "iconPath": "/assets/img/projects/icons/hop-to-heaven-icon.png",
         "featureBannerPath": "/assets/img/projects/feature-banners/hop-to-heaven-feature-banner.png",
+        "desc": "Help the wingless Cow Angel on his journey to heaven by jumping on the clouds\n\nA cow was now an angel.\nBut despite having a halo, he does not have wings.\n\nTo reach the heaven, luckily, there are clouds that he can hop on to reach there.\nHelp him reach the heaven!\n\nMake sure the cow won't miss a step and fall or he will start over again.\nGo higher and higher and reach as high as you can!\n\nFeatures:\n-Great graphics\n-Smooth and fluffy animations\n-Familiar game mechanics\n-Simple controls",
         "tags": [ "Games", "Mobile", "3D" ]
     },
     {
         "title": "A Cat in Space",
         "iconPath": "/assets/img/projects/icons/a-cat-in-space-icon.png",
         "featureBannerPath": "/assets/img/projects/feature-banners/a-cat-in-space-feature-banner.png",
+        "desc": "Break the ice and collect the gems!\nPick a rock, break an ice...\n\nPick a rock, then break an ice...\n\nHelp the cat collect the gems inside\nReturn to ship and ... wait, the ship is also frozen!\n\nA cute and fun game featuring a cat in space suit!\nFeatures:\n-Simplistic Art Style\n-Simple Game Mechanics\n-Hats and Props for the cat\n-An adorable cat — in space suit!",
         "tags": [ "Games", "Mobile", "2D" ]
     }
 ]

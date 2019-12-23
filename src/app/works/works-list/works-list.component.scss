@@ -4,3 +4,11 @@
     background-repeat: no-repeat;
     height: 100%;
 }
+.project-card {
+    white-space: pre-line;
+
+    .tag-badge {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
