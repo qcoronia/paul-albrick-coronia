@@ -17,7 +17,6 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
   public project$: Observable<Project>;
   public title$: Observable<string>;
   public shortDesc$: Observable<string>;
-  public longDesc$: Observable<string>;
   public desc$: Observable<string>;
 
   constructor(
@@ -37,9 +36,6 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
     );
     this.shortDesc$ = this.project$.pipe(
       map(res => res.shortDesc)
-    );
-    this.longDesc$ = this.project$.pipe(
-      map(res => res.desc)
     );
     this.desc$ = this.http.get(`assets/img/projects/markdowns/${this.slug}.md`, {
       responseType: 'text' as 'text',
