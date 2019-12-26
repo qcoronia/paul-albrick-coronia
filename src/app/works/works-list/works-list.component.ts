@@ -28,7 +28,6 @@ export class WorksListComponent implements OnInit {
       shareReplay(),
       tap(res => this.selectedProjects$.next(res))
     );
-    window['test'] = () => this;
   }
 
   ngOnInit() {
@@ -50,11 +49,17 @@ export class WorksListComponent implements OnInit {
 
   public selectionChanged(selectedTags: string[]) {
     this.projects$.pipe(
-      tap(res => console.warn('before', res)),
       map(projects => projects.filter(project => {
         return project.tags.some(tag => selectedTags.includes(tag));
       })),
-      tap(res => console.warn('after', res))
     ).subscribe(selectedProjects => this.selectedProjects$.next(selectedProjects));
+  }
+
+  public getProjectIcon(slug: string) {
+    return `/assets/img/projects/icons/${slug}-icon.png`;
+  }
+
+  public getProjectFeatureBanner(slug: string) {
+    return `/assets/img/projects/feature-banners/${slug}-feature-banner.png`;
   }
 }

@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, SafePipe],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent,

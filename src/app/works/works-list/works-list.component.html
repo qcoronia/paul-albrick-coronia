@@ -1,4 +1,4 @@
-<app-short-banner title="My Works"></app-short-banner>
+<app-short-banner bannerTitle="My Works"></app-short-banner>
 <app-works-filter-section (selectionChanged)="selectionChanged($event)"></app-works-filter-section>
 <section class="section bg-gradient-neutral">
     <div class="container pb-100">
@@ -9,16 +9,21 @@
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-4">
-                                    <div class="feature-banner" [style.background-image]="'url(' + project.featureBannerPath + ')' | safe: 'style'"></div>
+                                    <div class="feature-banner"
+                                         [style.background-image]="'url(' + getProjectFeatureBanner(project.slug) + ')' | safe: 'style'"></div>
                                 </div>
                                 <div class="col-md-8">
                                     <h4>{{project.title}}</h4>
                                     <p>
                                         <ng-template ngFor let-tag [ngForOf]="project.tags">
-                                            <span class="badge badge-success tag-badge">{{tag}}</span>
+                                            <span class="badge badge-success badge-lg tag-badge">{{tag}}</span>
                                         </ng-template>
                                     </p>
-                                    <p>{{project.desc}}</p>
+                                    <p>{{project.shortDesc}}</p>
+                                    <p>
+                                        <a class="btn btn-neutral"
+                                           [routerLink]="['..', 'item', project.slug]">More &rarr;</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

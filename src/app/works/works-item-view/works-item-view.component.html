@@ -1,0 +1,38 @@
+<app-short-banner [bannerTitle]="title$ | async"></app-short-banner>
+<section class="section section-lg mt--200 pb-0">
+    <div class="container">
+        <div class="row row-grid justify-content-center">
+            <div class="col-lg-10">
+                <div class="card shadow border-0">
+                    <div class="card-body text-center">
+                        <img [src]="'/assets/img/projects/feature-banners/' + slug + '-feature-banner.png' | safe: 'resourceUrl'"
+                             style="width: 100%"
+                             alt="{{slug}} feature banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-gradient-neutral pt-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 description">
+                <p>{{(shortDesc$ | async)}}</p>
+                <hr>
+                <p>{{(longDesc$ | async)}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-gradient-neutral pt-5">
+    <div class="container pb-100">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 description">
+                <a class="btn btn-neutral" [routerLink]="['/', 'projects', 'list']">
+                    &larr; Back to list
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

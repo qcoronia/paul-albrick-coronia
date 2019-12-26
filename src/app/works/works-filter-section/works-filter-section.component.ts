@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { Project } from 'src/app/models/project.model';
 
 @Component({
@@ -36,7 +36,9 @@ export class WorksFilterSectionComponent implements OnInit {
         }
 
         return distinctTags;
-      })
+      }),
+      tap(res => this.selectedTags = res),
+      tap(res => this.selectionChanged.next(res))
     ).subscribe(res => this.tags = res);
   }
 

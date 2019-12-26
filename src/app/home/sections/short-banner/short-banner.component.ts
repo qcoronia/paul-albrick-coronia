@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ShortBannerComponent implements OnInit {
 
   @Input() public salutation: string;
-  @Input() public title: string;
+  @Input() public bannerTitle: string;
   @Input() public subtitle: string;
   @Input() public caption: string;
 
