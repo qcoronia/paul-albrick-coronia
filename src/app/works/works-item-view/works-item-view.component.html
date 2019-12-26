@@ -20,7 +20,10 @@
             <div class="col-lg-10 description">
                 <p>{{(shortDesc$ | async)}}</p>
                 <hr>
-                <p>{{(longDesc$ | async)}}</p>
+                <!-- <p>{{(longDesc$ | async)}}</p> -->
+                <p>
+                    <markdown ngPreserveWhitespaces src="/assets/img/projects/markdowns/{{slug}}.md"></markdown>
+                </p>
             </div>
         </div>
     </div>

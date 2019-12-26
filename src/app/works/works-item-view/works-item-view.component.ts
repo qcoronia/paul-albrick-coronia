@@ -18,6 +18,7 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
   public title$: Observable<string>;
   public shortDesc$: Observable<string>;
   public longDesc$: Observable<string>;
+  public desc$: Observable<string>;
 
   constructor(
     private route: ActivatedRoute,
@@ -39,6 +40,11 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
     );
     this.longDesc$ = this.project$.pipe(
       map(res => res.desc)
+    );
+    this.desc$ = this.http.get(`assets/img/projects/markdowns/${this.slug}.md`, {
+      responseType: 'text' as 'text',
+    }).pipe(
+      shareReplay()
     );
   }
 

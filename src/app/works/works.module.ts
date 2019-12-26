@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { SectionsModule } from '../home/sections/sections.module';
 import { WorksFilterSectionComponent } from './works-filter-section/works-filter-section.component';
 import { WorksItemViewComponent } from './works-item-view/works-item-view.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,8 @@ import { WorksItemViewComponent } from './works-item-view/works-item-view.compon
     RouterModule,
     WorksRoutingModule,
     SectionsModule,
+
+    MarkdownModule,
   ],
   providers: [
     SafePipe,
