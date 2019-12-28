@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'projects', loadChildren: () => import('./works/works.module').then(m => m.WorksModule), pathMatch: 'prefix' },
+  { path: 'skills', loadChildren: () => import('./skills/skills.module').then(m => m.SkillsModule), pathMatch: 'prefix' },
 ];
 
 @NgModule({
