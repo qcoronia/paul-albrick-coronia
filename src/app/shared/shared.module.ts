@@ -5,8 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, SafePipe],
   imports: [
