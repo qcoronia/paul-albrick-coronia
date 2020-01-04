@@ -38,6 +38,8 @@
 - Unity 3D
 - Blender 3D
 - GIMP
+- Adobe Photoshop
+- CorelDRAW
 
 ## Services/Integrations
 - Github
