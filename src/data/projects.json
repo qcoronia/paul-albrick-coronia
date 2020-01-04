@@ -3,30 +3,43 @@
         "title": "Don't Get Crushed!",
         "slug": "dont-get-crushed",
         "shortDesc": "Try to avoid the pillars above that eagerly wants to CRUSH you!",
-        "tags": [ "Games", "Mobile", "2D" ]
+        "tags": [ "Games", "Mobile", "2D Game" ]
     },
     {
         "title": "Down the Pit for Cheese!",
         "slug": "down-the-pit-for-cheese",
         "shortDesc": "Help Jiffy gather lots of cheese in the cheese-filled pit.",
-        "tags": [ "Games", "Mobile", "2D" ]
+        "tags": [ "Games", "Mobile", "2D Game" ]
     },
     {
         "title": "Gravity Grind",
         "slug": "gravity-grind",
         "shortDesc": "Go further by Grinding and make your way by Flipping Gravity",
-        "tags": [ "Games", "Mobile", "3D" ]
+        "tags": [ "Games", "Mobile", "3D Game" ]
     },
     {
         "title": "Hop to Heaven",
         "slug": "hop-to-heaven",
         "shortDesc": "Help the wingless Cow Angel on his journey to heaven by jumping on the clouds",
-        "tags": [ "Games", "Mobile", "3D" ]
+        "tags": [ "Games", "Mobile", "3D Game" ]
     },
     {
         "title": "A Cat in Space",
         "slug": "a-cat-in-space",
         "shortDesc": "Break the ice and collect the gems!",
-        "tags": [ "Games", "Mobile", "2D" ]
+        "tags": [ "Games", "Mobile", "2D Game" ]
+    },
+
+    {
+        "title": "The Blue Car",
+        "slug": "render-the-blue-car",
+        "shortDesc": "The first 3d render I made using Blender 3D",
+        "tags": [ "Art", "3D Art" ]
+    },
+    {
+        "title": "Blue Chibi Girl",
+        "slug": "render-blue-chibi-girl",
+        "shortDesc": "The first 2d art I made using CorelDRAW",
+        "tags": [ "Art", "2D Art" ]
     }
 ]
