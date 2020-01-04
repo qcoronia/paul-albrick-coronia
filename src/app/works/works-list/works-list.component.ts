@@ -56,10 +56,10 @@ export class WorksListComponent implements OnInit {
   }
 
   public getProjectIcon(slug: string) {
-    return `/assets/img/projects/icons/${slug}-icon.png`;
+    return `/assets/works/${slug}/${slug}-icon.png`;
   }
 
-  public getProjectFeatureBanner(slug: string) {
-    return `/assets/img/projects/feature-banners/${slug}-feature-banner.png`;
+  public getFeatureBanner(slug: string) {
+    return `/assets/works/${slug}/${slug}-banner-list-thumb.png`;
   }
 }

@@ -52,4 +52,8 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
     bannerTitle.scrollIntoView();
   }
 
+  public getFeatureBanner(slug: string) {
+    return `/assets/works/${slug}/${slug}-banner.png`;
+  }
+
 }
