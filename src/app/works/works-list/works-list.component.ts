@@ -1,5 +1,5 @@
-import { Component, OnInit, Output, ContentChild } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { Component, OnInit, Output, ContentChild, isDevMode } from '@angular/core';
+import { Observable, BehaviorSubject, of } from 'rxjs';
 import { map, shareReplay, tap } from 'rxjs/operators';
 import { Project } from 'src/app/models/project.model';
 import { HttpClient } from '@angular/common/http';
@@ -60,6 +60,15 @@ export class WorksListComponent implements OnInit {
   }
 
   public getFeatureBanner(slug: string) {
-    return `/assets/works/${slug}/${slug}-banner-list-thumb.png`;
+    if (isDevMode) {
+      return of(`/assets/works/${slug}/${slug}-banner-list-thumb.png`);
+    } else {
+      return this.projects$.pipe(
+        map(projects => projects
+          .filter(project => project.slug === slug)
+          .map(project => project.featureBannerThumbUrl)),
+        map(urls => urls.length > 0 ? urls[0] : ''),
+      );
+    }
   }
 }

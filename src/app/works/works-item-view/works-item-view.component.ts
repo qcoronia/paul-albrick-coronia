@@ -1,6 +1,6 @@
-import { Component, OnInit, Inject, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Inject, AfterViewInit, isDevMode } from '@angular/core';
 import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { Project } from 'src/app/models/project.model';
 import { HttpClient } from '@angular/common/http';
 import { map, shareReplay, switchMap } from 'rxjs/operators';
@@ -16,6 +16,7 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
   public projects$: Observable<Project[]>;
   public project$: Observable<Project>;
   public title$: Observable<string>;
+  public featureBannerUrl$: Observable<string>;
   public shortDesc$: Observable<string>;
   public desc$: Observable<string>;
 
@@ -33,6 +34,9 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
     );
     this.title$ = this.project$.pipe(
       map(res => res.title)
+    );
+    this.featureBannerUrl$ = this.project$.pipe(
+      map(res => res.featureBannerUrl)
     );
     this.shortDesc$ = this.project$.pipe(
       map(res => res.shortDesc)
@@ -53,7 +57,11 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
   }
 
   public getFeatureBanner(slug: string) {
-    return `/assets/works/${slug}/${slug}-banner.png`;
+    if (isDevMode) {
+      return of(`/assets/works/${slug}/${slug}-banner.png`);
+    } else {
+      return this.featureBannerUrl$;
+    }
   }
 
 }
