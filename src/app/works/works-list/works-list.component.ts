@@ -60,15 +60,15 @@ export class WorksListComponent implements OnInit {
   }
 
   public getFeatureBanner(slug: string) {
-    if (isDevMode) {
-      return of(`/assets/works/${slug}/${slug}-banner-list-thumb.png`);
-    } else {
+    // if (isDevMode) {
+    //   return of(`/assets/works/${slug}/${slug}-banner-list-thumb.png`);
+    // } else {
       return this.projects$.pipe(
         map(projects => projects
           .filter(project => project.slug === slug)
           .map(project => project.featureBannerThumbUrl)),
         map(urls => urls.length > 0 ? urls[0] : ''),
       );
-    }
+    // }
   }
 }

@@ -57,11 +57,11 @@ export class WorksItemViewComponent implements OnInit, AfterViewInit {
   }
 
   public getFeatureBanner(slug: string) {
-    if (isDevMode) {
-      return of(`/assets/works/${slug}/${slug}-banner.png`);
-    } else {
+    // if (isDevMode) {
+    //   return of(`/assets/works/${slug}/${slug}-banner.png`);
+    // } else {
       return this.featureBannerUrl$;
-    }
+    // }
   }
 
 }
