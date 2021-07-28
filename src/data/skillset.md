@@ -6,7 +6,7 @@
 - CSS
 - SCSS
 - HTML
-- T-SQL
+- MSSQL
 
 ## Frameworks
 - ASP .Net
@@ -19,7 +19,7 @@
 - Microsoft Report Server
 - Umbraco CMS
 - Hangfire
-- Angular
+- Angular 2+
 - Angular Material
 - Rxjs
 - Wijmo for Angular
@@ -37,7 +37,9 @@
 - RabbitMQ
 - Unity 3D
 - Blender 3D
+- Godot Engine
 - GIMP
+- Inkscape
 - Adobe Photoshop
 - CorelDRAW
 
