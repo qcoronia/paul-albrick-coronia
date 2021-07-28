@@ -145,6 +145,14 @@
         "tags": [ "Art", "3D Art" ]
     },
     {
+        "title": "GTS Hypercar",
+        "slug": "gts-hypercar",
+        "featureBannerThumbUrl": "https://firebasestorage.googleapis.com/v0/b/pa-coronia.appspot.com/o/pa-coronia%2Fart%2Fgts-hypercar-thumb.jpg?alt=media&token=caaa8e7d-9a27-41bc-8d5a-23ec5148ae8e",
+        "featureBannerUrl": "https://firebasestorage.googleapis.com/v0/b/pa-coronia.appspot.com/o/pa-coronia%2Fart%2Fgts-hypercar.jpg?alt=media&token=791f4354-3160-4a1f-b01e-c6cc302bd671",
+        "shortDesc": "A hypercar concept made by trying to combine shapes to design a car",
+        "tags": [ "Art", "3D Art" ]
+    },
+    {
         "title": "GTS Coupe",
         "slug": "gts-coupe",
         "featureBannerThumbUrl": "https://firebasestorage.googleapis.com/v0/b/pa-coronia.appspot.com/o/pa-coronia%2Fart%2Fgts-coupe-thumb..png?alt=media&token=bd4c751d-7f96-4ccb-aa37-2676d8524e46",
